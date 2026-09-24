@@ -6,6 +6,8 @@ Manage branches, browse commit history, inspect changed files, and perform commo
 
 **Git graph** · **Branch management** · **Search & filters** · **Changed files** · **Merge / Rebase / Push**
 
+> This repository is the public home for Git Log releases, documentation, bug reports, and feature requests. The source code is maintained separately and is not published in this repository.
+
 ## Highlights
 
 - **Branch management** — browse local and remote branches, create, checkout, rename, delete, merge, rebase, update, and push.
@@ -15,6 +17,33 @@ Manage branches, browse commit history, inspect changed files, and perform commo
 - **Branch comparison** — compare branch histories or diff a branch against the working tree.
 - **Remote state** — fetch remotes and see ahead/behind state for tracked branches.
 - **Fast workflow** — open Git Log from the bottom panel, status bar, Command Palette, or keyboard shortcut.
+
+## Installation
+
+Git Log is currently distributed as a `.vsix` package through GitHub Releases.
+
+1. Open the **Releases** section of this repository.
+2. Download the `.vsix` file from the latest release.
+3. Open the Extensions view in Cursor or VS Code.
+4. Open the Extensions menu (`...`).
+5. Choose **Install from VSIX...**
+6. Select the downloaded package.
+
+You can also install it from the command line.
+
+### Cursor
+
+```bash
+cursor --install-extension git-log-<version>.vsix
+```
+
+### VS Code
+
+```bash
+code --install-extension git-log-<version>.vsix
+```
+
+Extension ID: `cesnakas.git-log`
 
 ## Features
 
@@ -73,32 +102,6 @@ Manage branches, browse commit history, inspect changed files, and perform commo
 - Integration with the built-in VS Code Git extension
 - Automatic background fetch
 - Live ahead/behind indicators
-
-## Installation
-
-Git Log is currently distributed as a `.vsix` package.
-
-1. Download the latest `.vsix` from the GitHub Releases section.
-2. Open the Extensions view in Cursor or VS Code.
-3. Open the Extensions menu (`...`).
-4. Choose **Install from VSIX...**
-5. Select the downloaded package.
-
-You can also install it from the command line.
-
-### Cursor
-
-```bash
-cursor --install-extension git-log-<version>.vsix
-```
-
-### VS Code
-
-```bash
-code --install-extension git-log-<version>.vsix
-```
-
-Extension ID: `cesnakas.git-log`
 
 ## Usage
 
@@ -167,29 +170,20 @@ Default: `merge`
 | `Git Log: Open` | Open and focus the Git Log panel |
 | `Git Log: Refresh` | Refresh branches and commit history |
 
-## Development
+## Releases
 
-Install dependencies:
+Ready-to-install builds are published in the **Releases** section of this repository.
 
-```bash
-npm install
-```
+See [CHANGELOG.md](CHANGELOG.md) for notable changes between versions.
 
-Compile the extension:
+## Feedback & Issues
 
-```bash
-npm run compile
-```
+Found a bug or have an idea for Git Log?
 
-Build a `.vsix` package:
+- Use **Bug report** for reproducible problems.
+- Use **Feature request** to suggest improvements or new workflows.
 
-```bash
-npm run package
-```
-
-## Feedback
-
-Bug reports and feature requests are welcome. Open an issue in this repository and include steps to reproduce when reporting a bug.
+Please check existing issues before opening a new one.
 
 ## Support
 
@@ -197,4 +191,6 @@ If Git Log saves you time, you can support its development at [support.cesnakas.
 
 ## License
 
-Git Log is released under the [MIT License](LICENSE).
+Git Log is proprietary software.
+
+The distributed extension may be installed and used subject to the terms in [LICENSE](LICENSE). The source code is not licensed for public use or distribution.
