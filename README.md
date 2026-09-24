@@ -6,8 +6,6 @@ Manage branches, browse commit history, inspect changed files, and perform commo
 
 **Git graph** · **Branch management** · **Search & filters** · **Changed files** · **Merge / Rebase / Push**
 
-> This repository is the public home for Git Log releases, documentation, bug reports, and feature requests. The source code is maintained separately and is not published in this repository.
-
 ## Highlights
 
 - **Branch management** — browse local and remote branches, create, checkout, rename, delete, merge, rebase, update, and push.
