@@ -1,0 +1,65 @@
+name: Feature request
+description: Suggest an improvement or new capability for Git Log
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement. Please focus on the problem and the workflow you want to improve.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What problem are you trying to solve?
+      placeholder: "Describe the workflow or limitation."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How would you like Git Log to behave?
+      placeholder: "Describe the feature or expected behavior."
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example workflow
+      description: Give a concrete example of how you would use this feature.
+      placeholder: |
+        Example:
+        1. Open...
+        2. Select...
+        3. Git Log should...
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional — describe any workarounds or alternatives you currently use.
+
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      options:
+        - Cursor
+        - Visual Studio Code
+        - Both
+        - Not editor-specific
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues and did not find a duplicate request.
+          required: true

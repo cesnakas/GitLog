@@ -1,0 +1,106 @@
+name: Bug report
+description: Report a reproducible problem with Git Log
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug. Please provide enough detail to reproduce the issue.
+
+  - type: dropdown
+    id: editor
+    attributes:
+      label: Editor
+      description: Where does the issue occur?
+      options:
+        - Cursor
+        - Visual Studio Code
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: editor_version
+    attributes:
+      label: Editor version
+      description: Example: Cursor 1.x.x or VS Code 1.xx.x
+      placeholder: "Cursor / VS Code version"
+    validations:
+      required: true
+
+  - type: input
+    id: extension_version
+    attributes:
+      label: Git Log version
+      description: Version of the Git Log extension
+      placeholder: "e.g. 0.4.54"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: git_version
+    attributes:
+      label: Git version
+      description: Run `git --version`
+      placeholder: "e.g. git version 2.51.0"
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+      placeholder: "Tell us what went wrong."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence of steps.
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. Run...
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs, screenshots, or additional context
+      description: Add logs, screenshots, repository details, or any other useful context.
+      placeholder: "Paste logs here or drag and drop screenshots."
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I checked existing issues and did not find a duplicate.
+          required: true
+        - label: I can reproduce this issue with the version listed above.
+          required: true
