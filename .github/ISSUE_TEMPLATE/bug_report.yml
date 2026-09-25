@@ -9,6 +9,10 @@ body:
       value: |
         Thanks for reporting a bug. Please provide enough detail to reproduce the issue.
 
+        > **Security vulnerability?**
+        > Please do not report security vulnerabilities in a public issue.
+        > Use GitHub's **Private vulnerability reporting** instead.
+
   - type: dropdown
     id: editor
     attributes:
